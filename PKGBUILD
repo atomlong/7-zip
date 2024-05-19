@@ -2,12 +2,13 @@
 
 pkgname=7-zip
 pkgver=24.05
-pkgrel=2
+pkgrel=3
 pkgdesc="File archiver with a high compression ratio"
 url=https://7-zip.org
 license=(BSD-2-Clause BSD-3-Clause LGPL-2.1-or-later LicenseRef-LGPL-2.1-or-later-with-unRAR-restriction LicenseRef-unRAR)
 arch=(x86_64)
-makedepends=(uasm meson)
+depends=(gcc-libs glibc)
+makedepends=(meson uasm)
 # Alternative sources:
 # * https://7-zip.org/a/7z2405-src.tar.xz
 # * https://downloads.sourceforge.net/project/sevenzip/7-Zip/24.05/7z2405-src.tar.xz
@@ -29,4 +30,3 @@ build() {
 package() {
 	meson install -C build --destdir "${pkgdir}"
 }
-
