@@ -1,18 +1,23 @@
 pkgbase = 7-zip
 	pkgdesc = File archiver with a high compression ratio
 	pkgver = 24.05
-	pkgrel = 1
+	pkgrel = 2
 	url = https://7-zip.org
 	arch = x86_64
 	license = BSD-2-Clause
 	license = BSD-3-Clause
 	license = LGPL-2.1-or-later
+	license = LicenseRef-LGPL-2.1-or-later-with-unRAR-restriction
 	license = LicenseRef-unRAR
 	makedepends = uasm
 	makedepends = meson
-	source = https://7-zip.org/a/7z2405-src.tar.xz
+	source = https://github.com/ip7z/7zip/releases/download/24.05/7z2405-src.tar.xz
 	source = meson.build
+	source = BSD-2-Clause.txt
+	source = BSD-3-Clause.txt
 	sha256sums = 63f341cf80b8d287c6e945519b3da0fa75553c85572a471b7fa6e68f9a90b790
-	sha256sums = d1a583e7252f1e4d61c6f1cacd920dd4d74918744d0ad048a5281cc2228edcef
+	sha256sums = f9d1535f7c7fa22be0daa6dd7ce0de5e148a37578120e56cfbb6dfe7158c34d5
+	sha256sums = 017b5ee48f680e82cba79141c7895a1f02b856df2512225f5c427fe36765ef0b
+	sha256sums = 3cf06aba3588c41c514f6946bb2d757b413ff6491647d474800f55edca75dcb4
 
 pkgname = 7-zip
