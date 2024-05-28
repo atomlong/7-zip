@@ -2,7 +2,7 @@
 
 pkgname=7-zip
 pkgver=24.06
-pkgrel=3
+pkgrel=4
 pkgdesc="File archiver with a high compression ratio"
 url=https://7-zip.org
 license=(BSD-2-Clause BSD-3-Clause LGPL-2.1-or-later LicenseRef-LGPL-2.1-or-later-with-unRAR-restriction LicenseRef-unRAR)
@@ -12,8 +12,7 @@ makedepends=(meson uasm)
 # Alternative sources:
 # * https://7-zip.org/a/7z${pkgver//\./}-src.tar.xz
 # * https://downloads.sourceforge.net/project/sevenzip/7-Zip/${pkgver}/7z${pkgver//\./}-src.tar.xz
-# ${pkgver//\./} substitution doesn't work with openSUSE Build Service
-source=(https://github.com/ip7z/7zip/releases/download/${pkgver}/7z2406-src.tar.xz
+source=(https://github.com/ip7z/7zip/releases/download/${pkgver}/7z${pkgver//\./}-src.tar.xz
 		meson.build.template
 		BSD-2-Clause.txt
 		BSD-3-Clause.txt)
